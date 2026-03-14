@@ -83,3 +83,12 @@ print(f'{area = :.2f}')
 # 这种格式化输出的方式会同时输出变量名和变量值
 # print(f'{perimeter = :.2f}    {area = :.2f}')
 
+# 判断闰年
+# 输入一个 1582 年以后的年份，判断该年份是不是闰年
+year = int(input('请输入年份'))
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    print("闰年")
+else:
+    print("平年")
+# is_leap = year % 4 == 0 and year % 100 != 0 or year % 400 == 0
+# print(f'{is_leap = }')
