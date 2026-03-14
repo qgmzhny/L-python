@@ -1,3 +1,5 @@
+import math
+# day003
 print("day003")
 
 # python运算符
@@ -35,6 +37,7 @@ flag1 = 3 > 2
 flag2 = 2 < 1
 print(flag1 and not flag2)
 
+# 华氏温度转摄氏温度
 # 华氏温度到摄氏温度的转换公式为
 # C = ( F - 32 ) / 1.8
 # 摄氏温度C，华氏温度F
@@ -51,3 +54,26 @@ print('%.1f华氏度 = %.1f摄氏度' % (f, c))
 # 字符串为%d占位符，用int类型的值替换掉，
 # 字符串为%s占位符，用str类型的值替换掉
 
+f = float(input('请输入华氏温度: '))
+c = (f - 32) / 1.8
+print(f'{f:.1f}华氏度 = {c:.1f}摄氏度')
+
+# f'' 表示格式化字符串常量，通常称为 f-string
+# {f:.1f}和{c:.1f}可以先看成是{f}和{c}，
+# 表示输出时会用变量f和变量c的值替换掉这两个占位符，
+# 后面的:.1f表示这是一个浮点数，小数点后保留1位有效数字
+
+
+# 计算圆的周长和面积
+# 计算出它的周长(2πr)和面积(πr**2)、
+π = 3.14
+r = float(input('请输入半径: '))
+perimeter = 2 * π * r
+area = π * r ** 2
+print(f'周长为：{perimeter:.2f},面积为：{area:.2f}')
+
+# import math
+radius = float(input('请输入半径: '))
+perimeter = 2 * math.pi * radius
+area = math.pi * radius ** 2
+print(f'周长为：{perimeter:.2f},面积为：{area:.2f}')
