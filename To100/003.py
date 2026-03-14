@@ -35,3 +35,11 @@ flag1 = 3 > 2
 flag2 = 2 < 1
 print(flag1 and not flag2)
 
+# 华氏温度到摄氏温度的转换公式为
+# C = ( F - 32 ) / 1.8
+# 摄氏温度C，华氏温度F
+
+f = float(input("请输入华氏温度F"))
+c = ( f - 32 ) / 1.8
+print(c)
+print('%.1f华氏度 = %.1f摄氏度' % (f, c))
