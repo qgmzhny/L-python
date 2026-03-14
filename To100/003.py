@@ -31,4 +31,7 @@ print("day003")
 
 # print函数可以输出多个值，多个值之间可以用,进行分隔，输出的内容默认以空格分开
 
+flag1 = 3 > 2
+flag2 = 2 < 1
+print(flag1 and not flag2)
 
