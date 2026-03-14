@@ -1,4 +1,5 @@
 import math
+
 # day003
 print("day003")
 
@@ -76,4 +77,7 @@ print(f'周长为：{perimeter:.2f},面积为：{area:.2f}')
 radius = float(input('请输入半径: '))
 perimeter = 2 * math.pi * radius
 area = math.pi * radius ** 2
-print(f'周长为：{perimeter:.2f},面积为：{area:.2f}')
+
+print(f'{perimeter = :.2f}')
+print(f'{area = :.2f}')
+# 这种格式化输出的方式会同时输出变量名和变量值
