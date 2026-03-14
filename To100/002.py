@@ -5,14 +5,14 @@ print(100)  # 十进制整数
 print(0x100)  # 十六进制整数
 
 # 浮点型（float）
-print(123.456)    # 数学写法
+print(123.456)  # 数学写法
 print(1.23456e2)  # 科学计数法
 
 # 字符串型（str）
-print('\'hello\'' +  " " + "\"hello\"")
+print('\'hello\'' + " " + "\"hello\"")
 
 # 布尔型（bool）
-print('true' + " " +  "or" + " " + "false")
+print('true' + " " + "or" + " " + "false")
 
 # 变量命名
 # 惯例1：变量名通常使用小写英文字母，多个单词用下划线进行连接
@@ -45,3 +45,5 @@ f = 'h'
 print(ord(f))
 f = "0"
 print(ord(f))
+
+# Python 内置的函数可以对变量进行类型转换
