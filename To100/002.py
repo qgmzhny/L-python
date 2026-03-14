@@ -45,7 +45,3 @@ f = 'h'
 print(ord(f))
 f = "0"
 print(ord(f))
-
-print(555)
-
-print(666)
