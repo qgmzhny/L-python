@@ -19,3 +19,13 @@ BMI = float(weight / ((height / 100) ** 2))
 print(f'{BMI = :.1f}')
 print(BMI)
 
+BMI = float(input('输入BMI'))
+if BMI < 18.5:
+    print('体重过轻')
+elif BMI < 24:
+    print('体重正常')
+else:
+    if BMI < 27:
+        print('体重过重')
+    else:
+        print('肥胖')
