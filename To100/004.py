@@ -122,3 +122,32 @@ match score:
         print(f'{'score = B'}')
     case _:
         print(f'{'score = A'}')
+
+# 计算三角形的周长和面积
+# 要求：
+# 输入三条边的长度，
+# 如果能构成三角形就计算周长和面积；
+# 否则给出“不能构成三角形”的提示
+
+# 海伦公式
+# C = a + b + c
+# s = C / 2
+# Area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+
+# if-elif-else
+a = float(input('a = '))
+b = float(input('b = '))
+c = float(input('c = '))
+if (a + b > c) and (a + c > b) and (b + c > a):
+    C = a + b + c
+    print(f'周长: {C}')
+    s = C / 2
+    Area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+    print(f'面积: {Area}')
+else:
+    print('不能构成三角形')
+
+
+
+
+
