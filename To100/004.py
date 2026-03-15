@@ -34,14 +34,22 @@ else:
 # match和case构造分支结构
 status_code = int(input('响应状态码: '))
 match status_code:
-    case 400: description = 'Bad Request'
-    case 401: description = 'Unauthorized'
-    case 403: description = 'Forbidden'
-    case 404: description = 'Not Found'
-    case 405: description = 'Method Not Allowed'
-    case 418: description = 'I am a teapot'
-    case 429: description = 'Too many requests'
-    case _: description = 'Unknown Status Code'
+    case 400:
+        description = 'Bad Request'
+    case 401:
+        description = 'Unauthorized'
+    case 403:
+        description = 'Forbidden'
+    case 404:
+        description = 'Not Found'
+    case 405:
+        description = 'Method Not Allowed'
+    case 418:
+        description = 'I am a teapot'
+    case 429:
+        description = 'Too many requests'
+    case _:
+        description = 'Unknown Status Code'
 print('状态码描述:', description)
 
 # 在 Python 的 match-case 语句中，_（下划线）是一个特殊的通配符模式，表示"匹配任何东西"
@@ -49,12 +57,17 @@ print('状态码描述:', description)
 
 status_code = int(input('响应状态码'))
 match status_code:
-    case 400 | 405: description = 'Invalid Request'
-    case 401 | 403 | 404: description = 'Not Allowed'
-    case 418: description = 'I am a teapot'
-    case 429: description = 'Too many requests'
-    case _: description = 'Unknown Status Code'
-print('状态码描述',description)
+    case 400 | 405:
+        description = 'Invalid Request'
+    case 401 | 403 | 404:
+        description = 'Not Allowed'
+    case 418:
+        description = 'I am a teapot'
+    case 429:
+        description = 'Too many requests'
+    case _:
+        description = 'Unknown Status Code'
+print('状态码描述', description)
 
 # python在match-case 语句中|表示或
 
@@ -82,4 +95,30 @@ match x:
 # print(y)
 print(f'{y = }')
 
+# 百分制成绩转换成等级
+# if-elif-else
+score = float(input('score = '))
+if score < 60:
+    print(f'{'score = E'}')
+elif score < 70:
+    print(f'{'score = D'}')
+elif score < 80:
+    print(f'{'score = C'}')
+elif score < 90:
+    print(f'{'score = B'}')
+else:
+    print(f'{'score = A'}')
 
+# match-case
+score = float(input('score = '))
+match score:
+    case score if score < 60:
+        print(f'{'score = E'}')
+    case score if score < 70:
+        print(f'{'score = D'}')
+    case score if score < 80:
+        print(f'{'score = C'}')
+    case score if score < 90:
+        print(f'{'score = B'}')
+    case _:
+        print(f'{'score = A'}')
