@@ -31,4 +31,4 @@ else:
     else:
         print('肥胖')
 
-
+# match和case构造分支结构
