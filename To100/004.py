@@ -67,7 +67,8 @@ elif x <= 1:
     y = x + 2
 else:
     y = 3 * x - 5
-print(y)
+# print(y)
+print(f'{y = }')
 
 # match-case (guard 子句/在case后面加上if条件)
 x = float(input('x ='))
@@ -78,7 +79,7 @@ match x:
         y = 3 * x - 5
     case _:
         y = x + 2
-print(y)
-
+# print(y)
+print(f'{y = }')
 
 
