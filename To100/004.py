@@ -69,3 +69,16 @@ else:
     y = 3 * x - 5
 print(y)
 
+# match-case (guard 子句/在case后面加上if条件)
+x = float(input('x ='))
+match x:
+    case x if x < -1:
+        y = 5 * x + 3
+    case x if x > 1:
+        y = 3 * x - 5
+    case _:
+        y = x + 2
+print(y)
+
+
+
