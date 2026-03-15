@@ -80,7 +80,7 @@ area = math.pi * radius ** 2
 
 print(f'{perimeter = :.2f}')
 print(f'{area = :.2f}')
-# 这种格式化输出的方式会同时输出变量名和变量值
+# 这种格式化输出的方式(perimeter =)会同时输出变量名(perimeter)和变量值
 # print(f'{perimeter = :.2f}    {area = :.2f}')
 
 # 判断闰年
