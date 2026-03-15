@@ -58,4 +58,14 @@ print('状态码描述',description)
 
 # python在match-case 语句中|表示或
 
+# 分段函数求值
+# if-elif-else
+x = float(input('x ='))
+if x < -1:
+    y = 5 * x + 3
+elif x <= 1:
+    y = x + 2
+else:
+    y = 3 * x - 5
+print(y)
 
