@@ -94,8 +94,22 @@ for _ in range(1, 10):
         i += 1
     print()
 
+# 判断素数
+# 输入一个大于 1 的正整数，判断它是不是素数。
+prime = int(input('输入一个大于 1 的正整数:'))
+if prime <= 1:
+    print('非法输入')
+else:
+    if prime == 2:
+        print(f'{prime}是素数')
+    else:
+        for _ in range(2, prime):
+            if prime % _ == 0:
+                print(f'{prime}不是素数')
+                break
+            if prime == _ + 1:
+                print(f'{prime}是素数')
 
-
-
+# 对于大于 1 的正整数，因子应该都是成对出现的，所以循环到(n ** 0.4)就可以结束了
 
 
