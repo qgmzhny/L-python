@@ -23,6 +23,11 @@ for _ in range(40):
     print('hello world!')
     time.sleep(0.1)
 
+# 用for-in循环实现从 1 到 100 的整数求和
+s = 0
+for _ in range(1, 101):
+    s += _
+print(f's = {s}')
 
 # while循环
 
