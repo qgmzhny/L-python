@@ -83,3 +83,13 @@ for _ in range(1, 10):
 
 # end 是 print() 函数的可选参数
 
+# 上三角
+for _ in range(1, 10):
+    i = 1
+    while i < 10:
+        if i < _:
+            print(f'\t\t', end='')
+        else:
+            print(f'{_}×{i}={i * _}', end='\t')
+        i += 1
+    print()
