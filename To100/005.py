@@ -29,5 +29,12 @@ for _ in range(1, 101):
     s += _
 print(f's = {s}')
 
+# 从1到100偶数求和
+total  = 0
+for _ in range(0, 101, +2):
+    print(_)
+    total += _
+print(f'total = {total}')
+
 # while循环
 
