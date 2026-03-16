@@ -135,3 +135,15 @@ else:
 #     print(f'{num}是素数')
 # else:
 #     print(f'{num}不是素数')
+
+# 最大公约数
+# 输入两个大于 0 的正整数，求两个数的最大公约数
+num1 = int(input('输入两个大于 0 的正整数'))
+num2 = int(input('输入两个大于 0 的正整数'))
+if num1 < 0 or num2 < 0:
+    print('无效输入')
+else:
+    for share_nums in range(num1, 0, -1):
+        if num1 % share_nums == 0 and num2 % share_nums == 0:
+            print(f'最大公约数: {share_nums}')
+
