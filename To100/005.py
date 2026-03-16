@@ -59,3 +59,14 @@ while True:
         break
 print(f'total = {total}')
 
+# continue
+total = 0
+i = 1
+while True:
+    total += i
+    i += 1
+    if i < 101:
+        continue
+    break
+
+print(f'total = {total}')
