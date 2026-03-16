@@ -70,3 +70,10 @@ while True:
     break
 
 print(f'total = {total}')
+
+# 嵌套的循环结构
+# 九九乘法口诀表
+
+
+
+
