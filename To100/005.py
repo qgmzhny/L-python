@@ -153,3 +153,29 @@ while y % x != 0:
     x, y = y % x, x
 print(f'最大公约数: {x}')
 
+# 猜数字游戏
+# 1 到 100 之间的随机数
+# 输入猜测数字，给出对应的提示信息“大一点”、“小一点”或“猜对了”，
+# 如果玩家猜中了数字，计算机提示用户一共猜了多少次，游戏结束，
+# 否则游戏继续。
+import random
+guess_num = random.randint(1, 100)
+guess = int(input('输入1 到 100 之间的数字'))
+if guess > 100 or guess < 1:
+    print('非法输入')
+else:
+    counter = 0
+    guess_status = True
+    while guess_status:
+        counter += 1
+        if guess_num > guess:
+            print(f'大一点')
+            guess = int(input('请继续'))
+        elif guess_num < guess:
+            print(f'小一点')
+            guess = int(input('请继续'))
+        else:
+            print(f'猜对了')
+            guess_status = False
+
+    print(f'你一共猜了{counter}次.')
