@@ -147,7 +147,3 @@ if (a + b > c) and (a + c > b) and (b + c > a):
 else:
     print('不能构成三角形')
 
-
-
-
-
