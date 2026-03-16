@@ -36,7 +36,7 @@ for _ in range(0, 101, 2):
     total += _
 print(f'total = {total}')
 
-print(sum(range(1,101,2)))
+print(sum(range(2,101,2)))
 
 # while循环
 
