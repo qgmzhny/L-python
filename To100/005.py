@@ -110,6 +110,28 @@ else:
             if prime == _ + 1:
                 print(f'{prime}是素数')
 
-# 对于大于 1 的正整数，因子应该都是成对出现的，所以循环到(n ** 0.4)就可以结束了
+# 对于大于 1 的正整数，因子应该都是成对出现的，所以循环到(n ** 0.5)就可以结束了
+prime = int(input('输入一个大于 1 的正整数:'))
+half = int(prime ** 0.5)
+# int()向0取整
+if prime == 2 or prime == 3:
+    print(f'{prime}是素数')
+else:
+    for _ in range(2, half + 1):
+        if prime % _ == 0:
+            print(f'{prime}不是素数')
+            break
+        else:
+            print(f'{prime}是素数')
 
-
+# num = int(input('请输入一个正整数: '))
+# end = int(num ** 0.5)
+# is_prime = True
+# for i in range(2, end + 1):
+#     if num % i == 0:
+#         is_prime = False
+#         break
+# if is_prime:
+#     print(f'{num}是素数')
+# else:
+#     print(f'{num}不是素数')
