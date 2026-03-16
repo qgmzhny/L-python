@@ -73,7 +73,7 @@ print(f'total = {total}')
 
 # 嵌套的循环结构
 # 九九乘法口诀表
-# 左对齐
+# 下三角
 for _ in range(1, 10):
     i = 1
     while i < (_ + 1):
@@ -93,3 +93,9 @@ for _ in range(1, 10):
             print(f'{_}×{i}={i * _}', end='\t')
         i += 1
     print()
+
+
+
+
+
+
