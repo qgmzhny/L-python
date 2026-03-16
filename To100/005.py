@@ -39,4 +39,15 @@ print(f'total = {total}')
 print(sum(range(2,101,2)))
 
 # while循环
+# 不能确定循环重复的次数
+
+# 从1到100的偶数求和
+total = 0
+i = 1
+while i < 101:
+    total += i
+    i += 1
+print(f'total = {total}')
+
+# break和continue
 
