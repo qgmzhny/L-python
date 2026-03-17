@@ -1,4 +1,7 @@
 # day006
+
+import random
+
 print("day006")
 
 # 100以内的素数
@@ -102,9 +105,51 @@ for x1 in range(0, 21):
 # 如果庄家获胜，玩家就会输掉自己下注的金额。
 # 游戏结束的条件是玩家破产
 
+# import random
+# 初始资金
+initial_capital = 10
 
+# 开盘次数
+num = 0
 
+# 打印表头
+print("下注金额\t开盘点数\t首次点数\t结果\t\t剩余资金")
+print("-" * 60)
 
+while initial_capital > 0:
+    # 玩家下注
+    bet = random.randint(1, initial_capital)
 
+    # 开盘
+    guess_total = random.randint(1, 6) + random.randint(1, 6)
+    num += 1
 
+    if num == 1:
+        # 记录第一次开盘骰子数
+        first_guess = guess_total
 
+        if guess_total == 7 or guess_total == 11:
+            initial_capital += bet
+            result = "玩家胜"
+        elif guess_total == 2 or guess_total == 3 or guess_total == 12:
+            initial_capital -= bet
+            result = "庄家胜"
+        else:
+            initial_capital = initial_capital
+            result = "继续游戏"
+    else:
+        if guess_total == first_guess:
+            initial_capital += bet
+            result = "玩家胜"
+        elif guess_total == 7:
+            initial_capital -= bet
+            result = "庄家胜"
+        else:
+            initial_capital = initial_capital
+            result = "继续游戏"
+
+    # 统一输出，每列宽度8个字符，左对齐
+    print(f"{bet}\t\t{guess_total}\t\t{first_guess}\t\t{result}\t\t{initial_capital}")
+
+print("-" * 60)
+print(f"游戏结束！共开盘{num}次，已破产")
