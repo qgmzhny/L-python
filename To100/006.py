@@ -63,3 +63,28 @@ while num > 0:
     num //= 10
 print(f'reversed_num = {reversed_num}')
 
+# 百钱百鸡问题
+# 鸡翁一值钱五，鸡母一值钱三，鸡雏三值钱一。百钱买百鸡，问鸡翁、鸡母、鸡雏各几何？
+
+# (分析)==>
+# x1 > 0 and x1 < 20,
+# x2 > 0 and x2 < 34,
+# x3 > 0 and x3 < 100 < 300
+# x1 + x2 + x3 == 100
+# x1*n1 + x2*n2 + x3*n3 == 100
+
+for x1 in range(0, 21):
+    for x2 in range(0, 34):
+        for x3 in range(0, 100):
+            if 5 * x1 + 3 * x2 + x3 // 3 == 100 and x1 + x2 + x3 == 100 and x3 % 3 == 0:
+                print(f'x1 = {x1}', end='\t')
+                print(f'x2 = {x2}', end='\t')
+                print(f'x3 = {x3}', end='\t')
+                print()
+
+# for x in range(0, 21):
+#     for y in range(0, 34):
+#         for z in range(0, 100, 3):
+#             if x + y + z == 100 and 5 * x + 3 * y + z // 3 == 100:
+#                 print(f'公鸡: {x}只, 母鸡: {y}只, 小鸡: {z}只')
+
