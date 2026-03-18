@@ -54,6 +54,19 @@ print(6 not in items6)
 print('c' in items7)
 print('c++' not in items7)
 
+# []运算符
+# []的元素位置
+# 0到N - 1的整数
+# -1到-N的整数(负数索引)
+items9 = ['apple', 'waxberry', 'pitaya', 'peach', 'watermelon']
+print(items9[3])
+print(items9[0])
+items9[4] = 'tom'
+print(items9)
+print(items9[-2])
+print(items9[-3])
+items9[-4] = 'strawberry'
+print(items9)
 
 
 
