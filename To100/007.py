@@ -45,4 +45,17 @@ items7 = ['python', 'java', 'c']
 print(items6 * 3)
 print(items7 * 3)
 
+# 成员运算符in, not in
+# 使用in或not in运算符判断一个元素在不在列表中
+items6 = [35, 12, 99, 45, 66]
+items7 = ['python', 'java', 'c']
+print(5 in items6)
+print(6 not in items6)
+print('c' in items7)
+print('c++' not in items7)
+
+
+
+
+
 
