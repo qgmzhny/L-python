@@ -1,4 +1,6 @@
 # day007
+import random
+
 print("day007")
 
 # 常用数据结构
@@ -112,5 +114,32 @@ while index != len(items9):
 items9 = ['apple', 'waxberry', 'pitaya', 'peach', 'watermelon']
 for items9 in items9:
     print(items9)
+
+# 掷色子统计每种点数出现次数
+# import random
+# 色子列表
+counter = []
+
+# 色子点数
+f = [0, 0, 0, 0, 0, 0]
+
+for index in range(60):
+    counter.append(random.randrange(1, 7))
+for _ in range(60):
+    if counter[_] == 1:
+        f[0] += 1
+    elif counter[_] == 2:
+        f[1] += 1
+    elif counter[_] == 3:
+        f[2] += 1
+    elif counter[_] == 4:
+        f[3] += 1
+    elif counter[_] == 5:
+        f[4] += 1
+    else:
+        f[5] += 1
+
+for f in f:
+    print(f)
 
 
