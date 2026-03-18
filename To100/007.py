@@ -74,6 +74,7 @@ print(items9[:: 2])
 print(items9[1:: 3])
 print(items9[: 3: 2])
 print(items9[0: 4: 1])
+print(items9[1:: -1])
 
 # 通过切片操作修改列表中的元素
 items9 = ['apple', 'waxberry', 'pitaya', 'peach', 'watermelon']
