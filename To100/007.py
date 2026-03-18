@@ -151,3 +151,11 @@ for index in range(60):
 
 for index in range(6):
     print(f'{index + 1}点出现了{f[index - 1]}次')
+
+# 列表的方法
+# 给对象发消息
+# 通过对象引用调用对象方法
+
+
+
+
