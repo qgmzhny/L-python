@@ -82,8 +82,14 @@ items9 = ['apple', 'waxberry', 'pitaya', 'peach', 'watermelon']
 items9[1:3] = ['ik', 'un', '!']
 print(items9)
 
-
-
-
-
+# 关系运算
+# 比较两个列表是否相等，
+# 比较两个列表大小(比较第一个不同元素的大小)
+nums1 = [1, 2, 3, 4]
+nums2 = list(range(1, 5))
+nums3 = [3, 2, 1]
+print(nums1 == nums2)
+print(nums1 != nums2)
+print(nums1 >= nums3)
+print(nums2 <= nums3)
 
