@@ -216,6 +216,14 @@ print(items.count('banana'))
 # 从索引位置3开始查找'apple'
 print(items.index('apple',  3))
 
+# 元素排序和反转
+# 排序 (sort)
+items = ['apple', 'apple', 'banana', 'mango', 'orange', 'strawberry', 'grape', 'banana']
+items.sort()
+print(items)
+
+
+
 
 
 
