@@ -38,4 +38,11 @@ print(items7 + items8)
 items6 += items7
 print(items6)
 
+# 使用*运算符重复运算
+# *运算符会将列表元素重复指定的次数
+items6 = [35, 12, 99, 45, 66]
+items7 = ['python', 'java', 'c']
+print(items6 * 3)
+print(items7 * 3)
+
 
