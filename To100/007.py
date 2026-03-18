@@ -108,3 +108,9 @@ index = 0
 while index != len(items9):
     print(items9[index])
     index += 1
+
+items9 = ['apple', 'waxberry', 'pitaya', 'peach', 'watermelon']
+for items9 in items9:
+    print(items9)
+
+
