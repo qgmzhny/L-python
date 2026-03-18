@@ -156,6 +156,19 @@ for index in range(6):
 # 给对象发消息
 # 通过对象引用调用对象方法
 
+# 添加和删除元素
+
+# 添加
+# append方法向列表中追加元素
+# insert方法向列表中插入元素
+
+# 追加
+fruit = ['apple', 'banana', 'orange', 'strawberry', 'grape']
+print(fruit)
+
+# 插入
+fruit.insert(2, 'mango')
+print(fruit)
 
 
 
