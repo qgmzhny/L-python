@@ -28,6 +28,14 @@ print(items4)
 items5 = list('hello world!')
 print(items5)
 
-
+# 列表运算
+# 使用+运算符拼接列表
+items6 = [35, 12, 99, 45, 66]
+items7 = ['python', 'java', 'c']
+items8 = [True, False]
+print(items6 + items8)
+print(items7 + items8)
+items6 += items7
+print(items6)
 
 
