@@ -142,4 +142,12 @@ for _ in range(60):
 for f in f:
     print(f)
 
+# import random
+# 色子点数
+f = [0] * 6
+for index in range(60):
+    counter = random.randrange(1, 7)
+    f[counter - 1] += 1
 
+for index in range(6):
+    print(f'{index + 1}点出现了{f[index - 1]}次')
