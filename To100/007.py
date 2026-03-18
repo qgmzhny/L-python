@@ -93,3 +93,7 @@ print(nums1 != nums2)
 print(nums1 >= nums3)
 print(nums2 <= nums3)
 
+# 元素的遍历
+# 索引运算
+# 使用 [] 来访问序列（列表、字符串、元组等）中特定位置元素的操作
+
