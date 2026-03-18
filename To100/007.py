@@ -22,7 +22,11 @@ print(type(items1))
 print(type(items2))
 print(type(items3))
 
-
+# list函数将其他序列变成列表
+items4 = list(range(1, 10))
+print(items4)
+items5 = list('hello world!')
+print(items5)
 
 
 
