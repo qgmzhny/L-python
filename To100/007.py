@@ -96,4 +96,15 @@ print(nums2 <= nums3)
 # 元素的遍历
 # 索引运算
 # 使用 [] 来访问序列（列表、字符串、元组等）中特定位置元素的操作
+items9 = ['apple', 'waxberry', 'pitaya', 'peach', 'watermelon']
+for _ in range(len(items9)):
+    print(items9[_], end='\t')
 
+# len函数
+# 可以获取列表元素的个数N
+# range(N)则构成了从0到N-1的范围
+items9 = ['apple', 'waxberry', 'pitaya', 'peach', 'watermelon']
+index = 0
+while index != len(items9):
+    print(items9[index])
+    index += 1
