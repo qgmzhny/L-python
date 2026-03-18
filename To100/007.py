@@ -199,4 +199,8 @@ if 2 in nums:
     nums.remove(2)
 print(nums)
 
+# del
+del_nums = [1, 2, 3, 4, 5, 2]
+del del_nums[3]
+print(del_nums)
 
