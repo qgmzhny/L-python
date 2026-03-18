@@ -170,5 +170,24 @@ print(fruit)
 fruit.insert(2, 'mango')
 print(fruit)
 
+# 删除元素
+fruits = ['apple', 'banana', 'mango', 'orange', 'strawberry', 'grape']
+if 'apple' in fruits:
+    fruits.remove('apple')
+if 'Java' in fruits:
+    fruits.remove('Java')
+print(fruits)
+
+# list.pop()
+fruits.pop()
+temp = fruits.pop(1)
+print(temp)
+fruits.append(temp)
+print(fruits)
+
+# list.clear()
+fruits.clear()
+print(fruits)
+
 
 
