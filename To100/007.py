@@ -189,5 +189,14 @@ print(fruits)
 fruits.clear()
 print(fruits)
 
+nums = [1, 2, 3, 3, 4, 5]
+if 3 in nums:
+    nums.remove(3)
+print(nums)
+
+nums = [1, 2, 3, 4, 5, 2]
+if 2 in nums:
+    nums.remove(2)
+print(nums)
 
 
