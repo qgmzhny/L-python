@@ -204,3 +204,18 @@ del_nums = [1, 2, 3, 4, 5, 2]
 del del_nums[3]
 print(del_nums)
 
+# 元素位置和频次
+items = ['apple', 'apple', 'banana', 'mango', 'orange', 'strawberry', 'grape', 'banana']
+print(items.index('apple'))
+
+# 从索引位置0开始查找'strawberry'
+print(items.index('strawberry', 0))
+print(items.index('banana', 0))
+print(items.count('banana'))
+
+# 从索引位置3开始查找'apple'
+print(items.index('apple',  3))
+
+
+
+
