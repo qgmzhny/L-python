@@ -226,5 +226,8 @@ print(items)
 items.reverse()
 print(items)
 
+# 列表生成式
+# 创建一个取值范围在1到99且能被3或者5整除的数字构成的列表
+
 
 
