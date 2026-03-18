@@ -222,8 +222,9 @@ items = ['apple', 'apple', 'banana', 'mango', 'orange', 'strawberry', 'grape', '
 items.sort()
 print(items)
 
-
-
+# 反转 (reverse)
+items.reverse()
+print(items)
 
 
 
