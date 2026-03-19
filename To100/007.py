@@ -294,6 +294,30 @@ print(scores)
 # print(scores)
 
 # 列表的应用
+# 双色球随机选号
+
+# import random
+red_list = list(range(1, 34))
+red = []
+blue = [random.randrange(1, 17)]
+for _ in range(6):
+    index = random.randrange(len(red_list))
+    red.append(red_list.pop(index))
+red.sort()
+
+# 从红色球列表中随机抽出6个红色球（无放回抽样）
+# red = random.sample(red_list, 6)
+
+# 输出选中的红色球
+for ball in red:
+    print(f'\033[031m{ball:0>2d}\033[0m', end=' ')
+
+# 输出选中的蓝色球
+for ball in blue:
+    print(f'\033[034m{ball:0>2d}\033[0m')
+
+
+
 
 
 
