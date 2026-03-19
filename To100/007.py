@@ -164,6 +164,7 @@ for index in range(6):
 
 # 追加
 fruit = ['apple', 'banana', 'orange', 'strawberry', 'grape']
+fruit.append('apple')
 print(fruit)
 
 # 插入
@@ -239,6 +240,10 @@ print(items)
 items = [i for i in range(1, 100) if i % 3 == 0 or i % 5 == 0]
 print(items)
 
-
-
+nums1 = [i for i in range(1, 100)]
+nums2 = []
+for _ in nums1:
+    nums2.append(_ ** 2)
+print(f'nums1 = {nums1}')
+print(f'nums2 = {nums2}')
 
