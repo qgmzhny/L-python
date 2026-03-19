@@ -226,8 +226,19 @@ print(items)
 items.reverse()
 print(items)
 
-# 列表生成式
+
 # 创建一个取值范围在1到99且能被3或者5整除的数字构成的列表
+items = []
+for _ in range(1, 100):
+    if _ % 3 == 0 or _ % 5 == 0:
+        items.append(_)
+print(items)
+
+# 列表生成式
+# 用一行表达式代替多行的循环代码来生成新的列表
+items = [i for i in range(1, 100) if i % 3 == 0 or i % 5 == 0]
+print(items)
+
 
 
 
