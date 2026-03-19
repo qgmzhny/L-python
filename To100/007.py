@@ -267,4 +267,30 @@ print(nums2)
 # 一个列表中的元素可以任意的数据类型，
 # 也包括列表本身
 
+scores = [[95, 83, 92], [80, 75, 82], [92, 97, 90], [80, 78, 69], [65, 66, 89]]
+print(scores[1])
+print(scores[2][2])
+
+# 通过键盘输入的方式来录入5个学生3门课程的成绩并保存在列表中
+scores = []
+for _ in range(5):
+    temp = []
+    for _ in range(3):
+        temp.append(float(input(f'请输入:')))
+    scores.append(temp)
+print(scores)
+
+# 通过产生随机数的方式来生成5个学生3门课程的成绩并保存在列表中
+# import random
+scores = []
+for _ in range(5):
+    temp = []
+    for _ in range(3):
+        temp.append(random.randrange(0, 100))
+    scores.append(temp)
+print(scores)
+
+# scores = [[random.randrange(60, 101) for _ in range(3)] for _ in range(5)]
+# print(scores)
+
 
