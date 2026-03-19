@@ -244,6 +244,24 @@ nums1 = [i for i in range(1, 100)]
 nums2 = []
 for _ in nums1:
     nums2.append(_ ** 2)
-print(f'nums1 = {nums1}')
 print(f'nums2 = {nums2}')
+
+nums1 = [5, 3, 7, 34, 66]
+nums2 = [nums ** 2 for nums in nums1]
+print(f'nums2 = {nums2}')
+
+nums1 = [35, 12, 97, 64, 55]
+nums2 = []
+for nums in nums1:
+    if nums > 50:
+        nums2.append(nums)
+print(nums2)
+
+nums1 = [35, 12, 97, 64, 55]
+nums2 = [nums for nums in nums1 if nums > 50]
+print(nums2)
+
+
+
+
 
