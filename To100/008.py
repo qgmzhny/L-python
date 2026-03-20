@@ -68,5 +68,13 @@ print(type(b))
 print(type(c))
 print(a, b, c)
 
+# 错误提示
+# 如果解包出来的元素个数和变量个数不对应，
+# 会引发ValueError异常，
+# 错误信息为：too many values to unpack（解包的值太多）
+# 或not enough values to unpack（解包的值不足）
+
+
+
 
 
