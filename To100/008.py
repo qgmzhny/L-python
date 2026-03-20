@@ -8,15 +8,48 @@ print('day008')
 # 元素的值也不能修改
 # 修改元组中的元素，将引发TypeError错误
 
-
-
-
-
-
-
-
-
-
-
-
 # 运算
+# 定义一个三元组
+t1 = (9, 5, 27)
+
+# 定义一个四元组
+t2 = ('刘德华', 66, False, '三重')
+
+# 查看变量的类型
+print(type(t1))
+print(type(t2))
+
+# 查看元组中元素的数量
+print(len(t1))
+print(len(t2))
+
+# 索引运算
+print(t1[2])
+print(t2[2])
+
+# 切片运算
+print(t1[:2])
+print(t2[::3])
+
+# 循环遍历元组中的元素
+for _ in t1:
+    print(_)
+
+# 成员运算
+print(5 in t1)
+print('三重' in t2)
+
+# 拼接运算
+t3 = t1 + t2
+print(t3)
+
+# 比较运算
+print(t1 == t3)
+print(t1 >= t3)
+print(t3 <= (35, 11, 99))
+
+# ()表示空元组
+# 一元组需要加上一个逗号
+# ('hello', )
+
+
