@@ -100,3 +100,11 @@ a, b, c = [1, 5, 10]
 print(a, b, c)
 a, *b, c = 'hello world'
 print(a, b, c)
+
+# 交换变量的值
+a = 1
+b = 2
+a, b = b, a
+print(a, b)
+
+
