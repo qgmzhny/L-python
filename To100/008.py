@@ -62,6 +62,11 @@ print(t1)
 # 解包
 # 把一个元组赋值给多个变量
 # 元组会解包成多个值然后分别赋给对应的变量
+a, b, c = t1
+print(type(a))
+print(type(b))
+print(type(c))
+print(a, b, c)
 
 
 
