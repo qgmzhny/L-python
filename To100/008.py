@@ -74,7 +74,22 @@ print(a, b, c)
 # 错误信息为：too many values to unpack（解包的值太多）
 # 或not enough values to unpack（解包的值不足）
 
+# 星号表达式
+# 通过星号表达式，
+# 可以让一个变量接收多个值
 
-
-
+# 注意事项
+# 星号表达式修饰的变量会变成一个列表，
+# 列表中有0个或多个元素；
+# 在解包语法中，
+# 星号表达式只能出现一次
+temp = ('唱', '跳', 'rap', '篮球')
+i, j, *k = temp
+print(i, j, k)
+i, *j, k = temp
+print(i, j, k)
+i, j, k, l = temp
+print(i, j, k, l)
+i, j, k, l, *m = temp
+print(i, j, k, l, m)
 
