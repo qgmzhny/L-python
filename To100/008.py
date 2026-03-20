@@ -138,5 +138,10 @@ print(tuple(nums1))
 # 字符串
 # 我们把单个或多个字符用单引号或者双引号包围起来，
 # 表示一个字符串
-
+s1 = '''hello,
+wonderful
+world!'''
+s2 = "你好，世界！❤️"
+print(s1)
+print(s2)
 
