@@ -128,6 +128,13 @@ import timeit
 print('%.3f 秒' % timeit.timeit('[1, 2, 3, 4, 5, 6, 7, 8, 9]', number=10000000))
 print('%.3f 秒' % timeit.timeit('(1, 2, 3, 4, 5, 6, 7, 8, 9)', number=10000000))
 
+# Python 中的元组和列表类型是可以相互转换
+temp = ('唱', '跳', 'rap', '篮球')
+# 将元组转换成列表
+print(list(temp))
+nums1 = [35, 12, 97, 64, 55]
+print(tuple(nums1))
+
 
 
 
