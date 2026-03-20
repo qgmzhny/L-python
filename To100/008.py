@@ -93,3 +93,10 @@ print(i, j, k, l)
 i, j, k, l, *m = temp
 print(i, j, k, l, m)
 
+# range函数构造的范围序列甚至字符串都可以使用解包语法
+a, b, *c = range(10)
+print(a, b, c)
+a, b, c = [1, 5, 10]
+print(a, b, c)
+a, *b, c = 'hello world'
+print(a, b, c)
