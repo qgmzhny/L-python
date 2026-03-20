@@ -160,5 +160,18 @@ s2 = '\\hello, world!\\'
 print(s1)
 print(s2)
 
+# 原始字符串
+# 以r或R开头的字符串
+s1 = '\'hello, world!\''
+s2 = r'\\hello, world!\\'
+print(s1)
+print(s2)
+
+s1 = '\time \to \read \now'
+s2 = r'\time \to \read \now'
+print(s1)
+print(s2)
+# \r 导致光标回到行首，所以 "ead" 覆盖了前面的部分
+
 
 
