@@ -151,5 +151,20 @@ s1 = 'qgmzhnyQ123456Q'
 print(s1.replace('Q', '@'))
 print(s1.replace('Q', '@', 1))
 
+# 拆分与合并
+# split 将一个字符串拆分为多个字符串（放在一个列表中）
+# join 将列表中的多个字符串连接成一个字符串
+# 默认使用空格进行拆分
+# 可以指定其他的字符来拆分字符串
+# 可以指定最大拆分次数来控制拆分的效果
+s1 = 'qgmzhny 123456'
+temp = s1.split()
+print('-'.join(temp))
 
+s1 = 'qgmzhnyQ123456'
+temp = s1.split('Q')
+print('@'.join(temp))
 
+s1 = 'qgmzhnyQ123Q456Q123'
+temp = s1.split('Q', 2)
+print(temp)
