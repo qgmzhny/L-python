@@ -142,4 +142,14 @@ s1 = '---Hello World---'
 print(s1.rstrip('-'))
 print(s1.lstrip('-'))
 
+# 替换操作
+# replace 用新的内容替换字符串中指定的内容
+# 参数一 被替换的内容，
+# 参数二 替换后的内容，
+# 参数二 指定替换的次数
+s1 = 'qgmzhnyQ123456Q'
+print(s1.replace('Q', '@'))
+print(s1.replace('Q', '@', 1))
+
+
 
