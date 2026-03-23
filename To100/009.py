@@ -131,5 +131,15 @@ print('{0} * {1} = {2}'.format(a, b, a * b))
 print(f'{a} * {b} = {a * b:,}')
 print(f'{a} * {b} = {a * b:.2e}')
 
+# 修剪操作
+# strip 获得将原字符串修剪掉左右两端指定字符之后的字符串，
+# 默认是修剪空格字符
+# lstrip
+# rstrip
+s1 = '     Hello World    '
+print(s1.strip())
+s1 = '---Hello World---'
+print(s1.rstrip('-'))
+print(s1.lstrip('-'))
 
 
