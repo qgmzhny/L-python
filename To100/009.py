@@ -168,3 +168,19 @@ print('@'.join(temp))
 s1 = 'qgmzhnyQ123Q456Q123'
 temp = s1.split('Q', 2)
 print(temp)
+
+# 编码和解码
+# 字节串
+# 由零个或多个字节组成的有限序列
+# 通过字符串的encode方法，按照某种编码方式将字符串编码为字节串
+# 可以使用字节串的decode方法，将字节串解码为字符串
+s1 = '迪奥布兰度'
+s2 = s1.encode('utf-8')
+s3 = s1.encode('gbk')
+print(s2)
+print(s3)
+print(s2.decode('utf-8'))
+print(s3.decode('gbk'))
+
+
+
