@@ -87,4 +87,24 @@ print(s1.rfind('or'))
 print(s1.rfind('or'))
 print(s1.rindex('or', 1))
 
+# 性质判断
+# 通过字符串的startswith、endswith来判断字符串是否以某个字符串开头和结尾
+# 通过is开头的方法判断字符串的特征
+# 返回布尔值
+s1 = 'hello world'
+print(s1.startswith('h'))
+print(s1.endswith('d'))
+
+# isdigit判断字符串是否完全由数字构成的
+# isalpha用来判断字符串是否完全由字母构成的，字母指的是 Unicode 字符但不包含 Emoji 字符
+# isalnum用来判断字符串是否由字母和数字构成的
+s2 = 'qgmzhny123456'
+print(s2.isdigit())
+print(s2.isalpha())
+print(s2.isalnum())
+
+
+
+
+
 
