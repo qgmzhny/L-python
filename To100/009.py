@@ -72,7 +72,19 @@ print(s2.lower())
 print(s1)
 print(s2)
 
+# 查找操作
+# find方法找不到指定的字符串会返回-1，
+# index方法找不到指定的字符串会引发ValueError错误
+s1 = 'hello world'
+print(s1.find('or'))
+print(s1.find('or', 8))
+print(s1.index('or'))
+print(s1.index('or', 3))
 
-
+# 逆向查找
+s1 = 'hello world'
+print(s1.rfind('or'))
+print(s1.rfind('or'))
+print(s1.rindex('or', 1))
 
 
