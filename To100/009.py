@@ -103,8 +103,33 @@ print(s2.isdigit())
 print(s2.isalpha())
 print(s2.isalnum())
 
+# 格式化
+# center 居中
+# ljust 左对齐
+# rjust 右对齐
+# zfill 在字符串的左侧补零
+s1 = 'Hello World'
+print(s1.center(20, '-'))
+print(s1[:5].ljust(20, '-'))
+print(s1[5:].rjust(20, '-'))
+print(s1[:5].upper().ljust(20))
+print(s1[5:].lower().rjust(-1).zfill(20))
 
+# print
+a = 123
+b = 321
+print('%d * %d = %d' % (a, b, a * b))
 
+# format
+# 按位置自动填充
+# 可以重复使用
+# 指定位置索引（从0开始）
+# 可以改变顺序
+a = 123
+b = 321
+print('{0} * {1} = {2}'.format(a, b, a * b))
+print(f'{a} * {b} = {a * b:,}')
+print(f'{a} * {b} = {a * b:.2e}')
 
 
 
