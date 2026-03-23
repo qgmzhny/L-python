@@ -181,6 +181,7 @@ print(s2)
 print(s3)
 print(s2.decode('utf-8'))
 print(s3.decode('gbk'))
+print(s3.decode('utf-8'))
 
 
 
