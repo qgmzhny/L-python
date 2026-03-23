@@ -51,5 +51,28 @@ s1 = 'hell world'
 for elem in s1:
     print(elem)
 
+# 字符串的方法
+# 大小写相关操作
+s1 = 'hell world'
+
+# 字符串首字母大写
+print(s1.capitalize())
+
+# 字符串每个单词首字母大写
+print(s1.title())
+
+# 字符串变大写
+print(s1.upper())
+
+# 字符串变小写
+s2 = 'THE WORLD'
+print(s2.lower())
+
+# 检查s1和s2的值
+print(s1)
+print(s2)
+
+
+
 
 
