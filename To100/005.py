@@ -30,7 +30,7 @@ for _ in range(1, 101):
 print(f's = {s}')
 
 # 从1到100偶数求和
-total  = 0
+total = 0
 for _ in range(0, 101, 2):
     print(_)
     total += _
