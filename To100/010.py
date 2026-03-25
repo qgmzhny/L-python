@@ -85,5 +85,22 @@ print(set2)
 set1 &= set2
 print(set1)
 
+# 比较运算
+# 超集：B集合 包含 A集合 的所有元素（B 可以等于 A）
+# 真超集：B 包含 A 的所有元素，且 B ≠ A（严格包含）
+set1 = {1, 2, 3, 4, 5, 6, 7}
+set2 = {1, 3, 5, 7}
+set3 = {2, 3, 5, 7}
+
+print(set2 < set1)
+print(set2 <= set1)
+print(set3 < set1)
+print(set3 <= set1)
+print(set1 > set2)
+print(set1 >= set2)
+
+print(set2.issubset(set1))
+print(set1.issuperset(set2))
+
 
 
