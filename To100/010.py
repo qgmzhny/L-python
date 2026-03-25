@@ -82,6 +82,8 @@ print(set1)
 
 set2 -= set1    # <==> set2.difference_update()
 print(set2)
+set1 &= set2
+print(set1)
 
 
 
