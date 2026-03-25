@@ -41,5 +41,10 @@ ikun = {'唱', '跳', 'rap', '篮球'}
 for elem in ikun:
     print(elem)
 
+# 集合的运算
+# 成员运算
+ikun = {'唱', '跳', 'rap', '篮球'}
+print('唱' in ikun)
+print('music' not in ikun)
 
 
