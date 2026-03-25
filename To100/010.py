@@ -102,5 +102,29 @@ print(set1 >= set2)
 print(set2.issubset(set1))
 print(set1.issuperset(set2))
 
+# 集合的方法
+# 添加和删除
+set1 = {1, 2, 3, 4, 5, 6, 7}
+# 添加元素
+set1.add(8)
+set1.add(9)
+print(set1)
 
+# 删除元素
+set1.discard(1)
+if 4 in set1:
+    set1.remove(4)
+print(set1)
 
+# 删除元素的remove方法在元素不存在时会引发KeyError错误
+
+# 清空元素
+set1.clear()
+print(set1)
+
+# 判断两个集合有没有相同的元素
+set2 = {1, 3, 5, 7}
+set3 = {2, 3, 5, 7}
+print(set1.isdisjoint(set2))
+print(set2.isdisjoint(set3))
+print(set1.isdisjoint(set3))
