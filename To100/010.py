@@ -69,3 +69,5 @@ print(set2.difference(set1))
 # 对称差
 print(set1 ^ set2)
 print(set1.symmetric_difference(set2))
+
+# 集合的二元运算还可以跟赋值运算一起构成复合赋值运算
