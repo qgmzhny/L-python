@@ -71,3 +71,17 @@ print(set1 ^ set2)
 print(set1.symmetric_difference(set2))
 
 # 集合的二元运算还可以跟赋值运算一起构成复合赋值运算
+set1 = {1, 2, 3, 4, 5, 6, 7}
+set2 = {2, 4, 6, 8, 10}
+set1 |= set2    # <==> set1.update(set2)
+print(set1)
+
+set3 = {3, 6, 9}
+set1 &= set3    # <==> set1.intersection_update()
+print(set1)
+
+set2 -= set1    # <==> set2.difference_update()
+print(set2)
+
+
+
