@@ -93,6 +93,12 @@ person = {
     'festival': 'KFC，疯狂星期四',
     'prices': '50 dollars'
 }
+
+# get方法在字典中没有指定的键时不会产生异常，而是返回None或指定的默认值
+print(person.get('name'))
+print(person.get('rap'))
+print(person.get('rap', True))
+
 print(person.keys())
 print(person.values())
 print(person.items())
