@@ -13,16 +13,6 @@ hobby = {
 }
 print(hobby)
 
-person = {
-    'name': '鸽鸽',
-    'age': 2.5,
-    'fans': 'ikun',
-    'identity': '宗主',
-    'festival': 'KFC，疯狂星期四',
-    'prices': '50 dollars'
-}
-print(person)
-
 person = dict(
     name = '鸽鸽',
     age = 2.5,
@@ -78,9 +68,26 @@ print('music' in person)
 # 索引运算
 print(person['hobby'])
 
-# 循环遍历
+# 遍历
+person = dict(
+    name = '鸽鸽',
+    age = 2.5,
+    fans = 'ikun',
+    identity = '宗主',
+    festival = 'KFC，疯狂星期四',
+    prices = '50 dollars',
+)
 for _ in person:
     print(f'{_}:\t{person[_]}')
+
+for key in person.keys():
+    print(key)
+
+for value in person.values():
+    print(value)
+
+for key, value in person.items():
+    print(key, ":", value)
 
 # 指定的键没有在字典中，将会引发KeyError异常
 
