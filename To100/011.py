@@ -53,5 +53,36 @@ print(len(hobby))
 for _ in hobby:
     print(_)
 
+# 字典的运算
+# 字典中的键必须是不可变类型
+person = dict(
+    name = '鸽鸽',
+    age = 2.5,
+    fans = 'ikun',
+    identity = '宗主',
+    festival = 'KFC，疯狂星期四',
+    prices = '50 dollars',
+    hobby = {
+        '唱': 'ikun一艺',
+        '跳': 'ikun二艺',
+        'rap': 'ikun三艺',
+        '篮球': 'ikun四艺'
+    }
+)
+print(person)
+
+# 成员运算
+print('hobby' in person)
+print('music' in person)
+
+# 索引运算
+print(person['hobby'])
+
+# 循环遍历
+for _ in person:
+    print(f'{_}:\t{person[_]}')
+
+# 指定的键没有在字典中，将会引发KeyError异常
+
 
 
