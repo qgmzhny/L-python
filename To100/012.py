@@ -27,4 +27,23 @@ print(f'temp = {temp}')
 print(f"C({m}, {n}) = {fm // (fn * temp)}")
 
 
+# 定义函数
+# 输入m和n，计算组合数C(m,n)的值
+def fac(num):
+    result = 1
+    for _ in range(2, num + 1):
+        result *= _
+    return result
+
+
+m = int(input('m = '))
+n = int(input('n = '))
+print(fac(m) // fac(n) // fac(m - n))
+
+from math import factorial
+m = int(input('m = '))
+n = int(input('n = '))
+print(factorial(m) // factorial(n) // factorial(m - n))
+
+
 
