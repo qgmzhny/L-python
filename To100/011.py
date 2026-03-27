@@ -150,6 +150,7 @@ print(ikun.clear())
 print(ikun)
 
 # 字典的应用
+# 输入一段话，统计每个英文字母出现的次数，按出现次数从高到低输出
 inputSpeak = input('请输入一段话: ')
 counter = {}
 for _ in inputSpeak:
@@ -158,3 +159,30 @@ for _ in inputSpeak:
 sorted_keys = sorted(counter, key = counter.get, reverse=True)
 for key in sorted_keys:
     print(f'{key} 出现了 {counter[key]} 次.')
+
+# 在一个字典中保存了股票的代码和价格，找出股价大于100元的股票并创建一个新的字典
+stock = {
+    '085601': 35,
+    '085602': 102,
+    '085603': 304,
+    '085604': 75,
+    '085605': 44,
+    '085606': 108,
+    '085607': 201,
+    '085608': 36,
+    '085609': 99,
+    '085610': 100,
+    '085611': 78,
+    '085612': 324,
+    '085613': 123,
+    '085614': 23,
+    '085615': 25
+}
+counter = {}
+for key, value in stock.items():
+    if value > 100:
+        counter[key] = value
+print(counter)
+
+
+
