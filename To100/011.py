@@ -84,5 +84,64 @@ for _ in person:
 
 # 指定的键没有在字典中，将会引发KeyError异常
 
+# 字典的方法
+person = {
+    'name': '鸽鸽',
+    'age': 2.5,
+    'fans': 'ikun',
+    'identity': '宗主',
+    'festival': 'KFC，疯狂星期四',
+    'prices': '50 dollars'
+}
+print(person.keys())
+print(person.values())
+print(person.items())
+for key, value in person.items():
+    print(f'{key}:\t{value}')
+
+# 合并
+hobby = {
+    '唱': 'ikun一艺',
+    '跳': 'ikun二艺',
+    'rap': 'ikun三艺',
+    '篮球': 'ikun四艺'
+}
+person = {
+    'name': '鸽鸽',
+    'age': 2.5,
+    'fans': 'ikun',
+    'identity': '宗主',
+    'festival': 'KFC，疯狂星期四',
+    'prices': '50 dollars'
+}
+# person.update(hobby)
+person |= hobby
+print(person)
+
+# 删除元素
+ikun = dict({
+    'name': '鸽鸽',
+    'age': 2.5,
+    'fans': 'ikun',
+    'identity': '宗主',
+    'festival': 'KFC，疯狂星期四',
+    'prices': '50 dollars',
+    '唱': 'ikun一艺',
+    '跳': 'ikun二艺',
+    'rap': 'ikun三艺',
+    '篮球': 'ikun四艺'
+})
+ikun['name'] = 'ikun'
+ikun['identity'] = '弟子'
+print(ikun)
+print(ikun.pop('fans'))
+print(ikun.popitem())
+del ikun['唱']
+del ikun['跳']
+del ikun['rap']
+print(ikun)
+print(ikun.clear())
+print(ikun)
+
 
 
