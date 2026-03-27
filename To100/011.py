@@ -143,5 +143,12 @@ print(ikun)
 print(ikun.clear())
 print(ikun)
 
-
-
+# 字典的应用
+inputSpeak = input('请输入一段话: ')
+counter = {}
+for _ in inputSpeak:
+    if 'A' <= _ <= 'Z' or 'a' <= _ <= 'z':
+        counter[_] = counter.get(_, 0) + 1
+sorted_keys = sorted(counter, key = counter.get, reverse=True)
+for key in sorted_keys:
+    print(f'{key} 出现了 {counter[key]} 次.')
