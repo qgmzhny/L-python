@@ -61,3 +61,19 @@ print('请输入需要判断的数据')
 num = int(input())
 temp = is_prime(num)
 ST_Judge(temp)
+
+def is_prime(num) -> bool:
+    for _ in range(2, int(num ** 0.5) + 1):
+        if num % _ == 0:
+            return False
+
+    return True
+
+
+print('请输入需要判断的数据')
+num = int(input())
+
+if(is_prime(num)):
+    print('质数')
+else:
+    print('合数')
