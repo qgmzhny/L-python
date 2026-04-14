@@ -77,3 +77,23 @@ if(is_prime(num)):
     print('质数')
 else:
     print('合数')
+
+
+# 最大公约数和最小公倍数
+# 计算两个正整数最大公约数和最小公倍数的函数
+def gcd(num1, num2) -> int:
+    """求最大公约数"""
+    return num1 if num2 == 0 else gcd(num2, num1 % num2)
+
+
+def lcm(num1, num2) -> int:
+    """求最小公倍数"""
+    return num1 * num2 // gcd(num1, num2)
+
+
+print('请输入需要计算的数据')
+num1 = int(input())
+num2 = int(input())
+print(
+    f'{num1}和{num2}的最大公约数为：{gcd(num1, num2)};\t最小公倍数为：{lcm(num1, num2)}'
+)
