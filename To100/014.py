@@ -43,10 +43,15 @@ new_nums = map(lambda x: x ** 2, filter(lambda x: x % 2 == 0, old_nums))
 print(list(new_nums))
 print(list(old_nums))
 
+# 如果传入的序列中所有的布尔值都是True，all函数返回True，否则all函数返回False
+# 用一行代码实现判断素数的函数
+is_prime = lambda x: all(map(lambda f: x % f, range(2, int(x ** 0.5) + 1)))
+print(is_prime(37))
+
 # 计算及格分数的平均分
-# 1. 过滤：只保留及格分数(>=60)
-# 2. 映射：每个分数加5分（平时分）
-# 3. 归约：计算平均分
+# 1. 过滤：只保留及格分数(>=60)  (filter)
+# 2. 映射：每个分数加5分（平时分）  (map)
+# 3. 归约：计算平均分  (reduce)
 from functools import reduce
 scores = [85, 92, 78, 90, 88, 45, 95, 60]
 news = reduce(lambda x, y: x + y,
