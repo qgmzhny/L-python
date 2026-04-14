@@ -59,3 +59,20 @@ news = reduce(lambda x, y: x + y,
                   filter(lambda x: x >= 60, scores)))
 
 print(news)
+
+# 偏函数
+# 函数的某些参数，生成一个新的函数，
+# 就无需在每次调用函数时都传递相同的参数
+# 可以使用functools模块的partial函数来创建偏函数
+import functools
+
+int2 = functools.partial(int, base = 2)
+int8 = functools.partial(int, base = 8)
+int16 = functools.partial(int, base = 16)
+print(int('1001'))
+print(int2('1001'))
+print(int8('1001'))
+print(int16('1001'))
+print(type(int))
+
+# partial函数的第一个参数和返回值都是函数，它将传入的函数处理成一个新的函数返回
