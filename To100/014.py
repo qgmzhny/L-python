@@ -30,3 +30,27 @@ print(new_nums)
 old_nums = ['唱', '跳', 'rap', '篮球']
 new_nums = sorted(old_nums, key= len)
 print(new_nums)
+
+# Lambda函数
+# 匿名函数
+# 代码中的表达式产生的运算结果就是这个匿名函数的返回值
+
+# 使用高阶函数的时候
+# 作为参数或者返回值的函数本身非常简单，一行代码就能够完成
+# 不需要考虑对函数的复用
+old_nums = [9, 5, 2, 7, 6, 3, 8]
+new_nums = map(lambda x: x ** 2, filter(lambda x: x % 2 == 0, old_nums))
+print(list(new_nums))
+print(list(old_nums))
+
+# 计算及格分数的平均分
+# 1. 过滤：只保留及格分数(>=60)
+# 2. 映射：每个分数加5分（平时分）
+# 3. 归约：计算平均分
+from functools import reduce
+scores = [85, 92, 78, 90, 88, 45, 95, 60]
+news = reduce(lambda x, y: x + y,
+              map(lambda x: x + 5,
+                  filter(lambda x: x >= 60, scores)))
+
+print(news)
